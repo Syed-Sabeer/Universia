@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('layouts.auth.master')
 
 @section('title', __('Login'))
 @section('description', '')
@@ -6,17 +6,18 @@
 @section('author', '')
 
 @section('css')
+
 @endsection
 
 @section('content')
 
 <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-7"><img class="bg-img-cover bg-center" src="../assets/images/login/2.jpg" alt="looginpage"></div>
+        <div class="col-xl-7"><img class="bg-img-cover bg-center" src="{{asset('AdminAssets/images/login/2.jpg')}}" alt="looginpage"></div>
         <div class="col-xl-5 p-0">
           <div class="login-card login-dark">
             <div>
-              <div><a class="logo text-start" href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt="looginpage"><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt="looginpage"></a></div>
+              <div><a class="logo text-start" href="index.html"><img class="img-fluid for-light" src="{{asset('AdminAssets/images/logo/logo.png')}}" alt="looginpage"><img class="img-fluid for-dark" src="{{asset('AdminAssets/images/logo/logo_dark.png')}}" alt="looginpage"></a></div>
               <div class="login-main"> 
                 <form class="theme-form">
                   <h4>Sign in to account</h4>
